@@ -20,7 +20,7 @@ class VerifyCsrfToken extends Middleware
         'canciones_listas/*',
         'anadircancion',
         'listsprin',
-        
+        'anadircancion',
         'borrarcancion/*',
         'notasuserpropietario',
         'borrarnota'
