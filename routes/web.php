@@ -8,6 +8,7 @@ use App\Http\Controllers\NotaController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CancionesListasReproduccionController;
 use App\Http\Controllers\ListaReproduccionController;
+use App\Http\Controllers\GeneroController;
 
 use App\Http\Controllers\CancionController;
 
@@ -22,6 +23,10 @@ use App\Http\Controllers\CancionController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+//genero
+Route::get('/api/generos', [GeneroController::class, 'index']);
+//fin genero
 
 //usuario
 
