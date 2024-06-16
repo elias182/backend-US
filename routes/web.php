@@ -9,7 +9,6 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CancionesListasReproduccionController;
 use App\Http\Controllers\ListaReproduccionController;
 
-use App\http\Controllers\GeneroController;
 use App\Http\Controllers\CancionController;
 
 
@@ -48,9 +47,6 @@ Route::post('/editarcancion/{id}', [CancionController::class, 'update']);
 
 //fin canciones
 
-//genero
-Route::get('/api/generos', [GeneroController::class, 'index']);
-//fin genero
 
 //Listarep
 Route::get('/listsprin', [ListaReproduccionController::class, 'index']);
