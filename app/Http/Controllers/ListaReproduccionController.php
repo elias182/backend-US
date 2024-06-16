@@ -9,6 +9,7 @@ class ListaReproduccionController extends Controller
 {
     public function index(Request $request)
 {
+    return "dsdf";
     // Obtener el id_usuario de los parámetros de la solicitud o usar 1 como valor por defecto
     $idUsuario = $request->input('id_usuario', 1);
     
