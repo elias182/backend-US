@@ -21,7 +21,7 @@ class Nota extends Model
      */
     public function song()
     {
-        return $this->belongsTo(Cancion::class, 'id_cancion');
+        return $this->belongsTo(Canciones::class, 'id_cancion');
     }
 
     /**

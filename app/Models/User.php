@@ -50,7 +50,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function songs()
     {
-        return $this->hasMany(Cancion::class, 'id_usuario');
+        return $this->hasMany(Canciones::class, 'id_usuario');
     }
 
     /**
@@ -69,19 +69,5 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(Nota::class, 'id_usuario');
     }
 
-    /**
-     * Get the followers of the user.
-     */
-    public function followers()
-    {
-        return $this->hasMany(Seguidores::class, 'seguido');
-    }
-
-    /**
-     * Get the users followed by the user.
-     */
-    public function followings()
-    {
-        return $this->hasMany(Seguidores::class, 'seguidor');
-    }
+    
 }
