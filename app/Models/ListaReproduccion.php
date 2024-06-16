@@ -17,17 +17,12 @@ class ListaReproduccion extends Model
         'id_usuario',
     ];
 
-    /**
-     * Get the user that owns the playlist.
-     */
+
     public function user()
     {
         return $this->belongsTo(User::class, 'id_usuario');
     }
 
-    /**
-     * Get the songs for the playlist.
-     */
     public function songs()
     {
         return $this->belongsToMany(Canciones::class, 'canciones_listas_reproduccion', 'id_lista', 'id_cancion');

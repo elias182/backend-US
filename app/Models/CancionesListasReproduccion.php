@@ -15,17 +15,13 @@ class CancionesListasReproduccion extends Model
         'id_lista',
     ];
 
-    /**
-     * Get the song for the playlist entry.
-     */
+
     public function song()
     {
         return $this->belongsTo(Canciones::class, 'id_cancion');
     }
 
-    /**
-     * Get the playlist for the playlist entry.
-     */
+
     public function playlist()
     {
         return $this->belongsTo(ListaReproduccion::class, 'id_lista');
