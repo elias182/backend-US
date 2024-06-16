@@ -6,7 +6,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CancionesListasReproduccionController;
 use App\Http\Controllers\ListaReproduccionController;
 
-use App\http\Controllers\GeneroController;
+use App\Http\Controllers\GeneroController;
 use App\Http\Controllers\CancionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
